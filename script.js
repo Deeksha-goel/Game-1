@@ -36,6 +36,9 @@ document.querySelector('.check').addEventListener('click', function () {
     document.querySelector('.message').textContent = '⛔ No number!';
   }
 
+  else if (guess ===22){
+   document.querySelector('.message').textContent='Alert! Value out of range';
+  }
   //correct guess
   else if (guess === SecretNumber) {
     displayMessage('💐 Correct Answer!');
@@ -61,4 +64,6 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = 0;
     }
   }
+
+
 });
